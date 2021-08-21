@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const clearConsole = require('clear-any-console');
+const clearConsole = require("clear-any-console");
 
 // Clears the console.
 clearConsole();

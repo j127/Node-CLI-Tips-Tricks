@@ -1,5 +1,5 @@
-const meow = require('meow');
-const { green, yellow, cyan, dim } = require('chalk');
+const meow = require("meow");
+const { green, yellow, cyan, dim } = require("chalk");
 
 const helpText = `
 	Usage
@@ -28,45 +28,45 @@ const helpText = `
 `;
 
 const options = {
-	inferType: true,
-	hardRejection: false,
-	flags: {
-		minimal: {
-			type: 'boolean',
-			alias: 'm',
-		},
-		clear: {
-			type: 'boolean',
-			default: true,
-		},
-		bio: {
-			type: 'boolean',
-			default: true,
-		},
-		social: {
-			type: 'boolean',
-			default: true,
-		},
-		ad: {
-			type: 'boolean',
-			default: true,
-		},
-		debug: {
-			type: 'boolean',
-			default: false,
-			alias: 'd',
-		},
-		version: {
-			type: 'boolean',
-			default: false,
-			alias: 'v',
-		},
-		posts: {
-			type: 'boolean',
-			default: false,
-			alias: 'p',
-		},
-	},
+    inferType: true,
+    hardRejection: false,
+    flags: {
+        minimal: {
+            type: "boolean",
+            alias: "m",
+        },
+        clear: {
+            type: "boolean",
+            default: true,
+        },
+        bio: {
+            type: "boolean",
+            default: true,
+        },
+        social: {
+            type: "boolean",
+            default: true,
+        },
+        ad: {
+            type: "boolean",
+            default: true,
+        },
+        debug: {
+            type: "boolean",
+            default: false,
+            alias: "d",
+        },
+        version: {
+            type: "boolean",
+            default: false,
+            alias: "v",
+        },
+        posts: {
+            type: "boolean",
+            default: false,
+            alias: "p",
+        },
+    },
 };
 
 module.exports = meow(helpText, options);
